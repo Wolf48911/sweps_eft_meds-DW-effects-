@@ -3,9 +3,11 @@
 ## 🔽 Required Items
 [Status Effect Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3281373199)
 [Decaying Winter Status Effects](https://steamcommunity.com/sharedfiles/filedetails/?id=3360051476)
- [Workshop Page]((https://steamcommunity.com/sharedfiles/filedetails/?id=3365276999))
 
-[Craft pig's Discord](https://discord.gg/2vwdkHzcYv)
+## 🔽 Links
+[Workshop Page]((https://steamcommunity.com/sharedfiles/filedetails/?id=3365276999))
+
+[My Discord](https://discord.gg/2vwdkHzcYv)
 
 ## 🔽 Credits
 - Project Lead: **Craft_Pig**
