@@ -18,7 +18,7 @@ SWEP.Category2 = "Medkits"
 
 SWEP.ViewModelFOV = 85
 SWEP.ViewModel = "models/weapons/sweps/eft/afak/v_meds_afak.mdl"
-SWEP.WorldModel = "models/weapons/sweps/eft/afak/w_meds_ifak.mdl"
+SWEP.WorldModel = "models/weapons/sweps/eft/salewa/w_meds_salewa.mdl"
 SWEP.UseHands = true
 SWEP.DrawCrosshair = false 
 

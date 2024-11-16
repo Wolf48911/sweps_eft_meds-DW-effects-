@@ -17,7 +17,7 @@ SWEP.Category2 = "Drugs"
 
 SWEP.ViewModelFOV = 85
 SWEP.ViewModel = "models/weapons/sweps/eft/augmentin/v_meds_augmentin.mdl"
-SWEP.WorldModel = "models/weapons/sweps/eft/augmentin/w_meds_augmentin.mdl"
+SWEP.WorldModel = "models/weapons/sweps/eft/cat/w_meds_cat.mdl"
 SWEP.UseHands = true
 SWEP.DrawCrosshair = false 
 
