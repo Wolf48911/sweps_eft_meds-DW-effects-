@@ -5,7 +5,7 @@
 [Decaying Winter Status Effects](https://steamcommunity.com/sharedfiles/filedetails/?id=3360051476)
 
 ## 🔽 Links
-[Workshop Page]((https://steamcommunity.com/sharedfiles/filedetails/?id=3365276999))
+[Workshop Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3365276999)
 
 [My Discord](https://discord.gg/2vwdkHzcYv)
 
