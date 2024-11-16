@@ -39,7 +39,7 @@ SWEP.Secondary.ClipSize = -1
 SWEP.Secondary.DefaultClip = -1
 SWEP.Secondary.Automatic = false
 
-SWEP.MaxHeal = 0
+SWEP.MaxHeal = 20
 
 local INI_SEF = false
 local ID_WEAPON = "weapon_eft_surgicalkit"
@@ -75,14 +75,17 @@ function SWEP:Deploy()
 end
 
 function SWEP:Heal(owner)
-	local owner = self:GetOwner() 
+	local owner = self:GetOwner()
+	local VarMissingHealth = owner:GetMaxHealth() - owner:Health()
+	local VarGetHealth = math.min(VarMissingHealth)
+	local VarHealHealth = math.min(VarGetHealth, self.MaxHeal)  
 	
 	if IsValid(self) then
 		if IsValid(owner) and SERVER and owner:GetActiveWeapon():GetClass() == ID_WEAPON then -- Heal logic
 			if INI_SEF == true then
 				owner:RemoveEffect("BrokenLeg")
-				owner:ApplyEffect("Healing", 1, 20, 2)
 			end	
+			owner:SetHealth(math.min(owner:GetMaxHealth(), owner:Health() + VarHealHealth))
 			owner:RemoveAmmo(1, ID_PRIMARYAMMO)  		
 		end
 	end
