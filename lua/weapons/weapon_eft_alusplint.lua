@@ -8,7 +8,7 @@ SWEP.PrintName = "Aluminium Splint"
 SWEP.Author = "Craft_Pig"
 SWEP.Purpose = 
 [[
-Cures Fatigue
+Treats Broken Legs
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"
@@ -77,7 +77,7 @@ function SWEP:Heal(owner)
 	if IsValid(self) then
 		if IsValid(owner) and SERVER and owner:GetActiveWeapon():GetClass() == ID_WEAPON then -- Heal logic
 			if INI_SEF == true then
-				owner:RemoveEffect("Fatigue")
+				owner:RemoveEffect("BrokenLeg")
 			end
 			owner:RemoveAmmo(1, ID_PRIMARYAMMO)   
 		end

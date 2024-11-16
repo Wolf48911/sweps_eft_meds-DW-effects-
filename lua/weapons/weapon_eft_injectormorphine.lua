@@ -10,8 +10,8 @@ SWEP.Purpose =
 [[
 Gives Endurance 305s, 15%
 Gives Hindered 120s, -30u
-Cures Concussion
-Cures Dark Vision
+Treats Concussion
+Treats Dark Vision
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"

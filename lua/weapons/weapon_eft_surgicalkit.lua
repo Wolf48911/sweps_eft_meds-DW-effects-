@@ -8,7 +8,8 @@ SWEP.PrintName = "CMS Surgical Kit"
 SWEP.Author = "Craft_Pig"
 SWEP.Purpose = 
 [[
-Cures Broken
+Heals up to 20HP
+Treats Broken Legs
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"
@@ -79,8 +80,8 @@ function SWEP:Heal(owner)
 	if IsValid(self) then
 		if IsValid(owner) and SERVER and owner:GetActiveWeapon():GetClass() == ID_WEAPON then -- Heal logic
 			if INI_SEF == true then
-				owner:RemoveEffect("Broken")
-				owner:RemoveEffect("Deathsdoorrecovery")
+				owner:RemoveEffect("BrokenLeg")
+				owner:ApplyEffect("Healing", 1, 20, 2)
 			end	
 			owner:RemoveAmmo(1, ID_PRIMARYAMMO)  		
 		end

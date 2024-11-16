@@ -9,7 +9,7 @@ SWEP.Author = "Craft_Pig"
 SWEP.Purpose = 
 [[
 Heals up to 35HP
-Cures Bleeding                    					
+Treats Bleeding (50)                    					
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"

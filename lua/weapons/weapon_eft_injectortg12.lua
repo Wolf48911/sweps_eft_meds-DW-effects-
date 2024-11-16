@@ -8,7 +8,7 @@ SWEP.PrintName = "xTG-12 Antidote"
 SWEP.Author = "Craft_Pig"
 SWEP.Purpose = 
 [[
-Cures Poison
+Treats Poison
 Gives Wither -5HP over 60s
 ]]
 SWEP.Category = "EFT"

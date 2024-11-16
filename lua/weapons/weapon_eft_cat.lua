@@ -8,7 +8,7 @@ SWEP.PrintName = "CAT hemostatic tourniquet"
 SWEP.Author = "Craft_Pig"
 SWEP.Purpose = 
 [[
-Cures Bleeding
+Treats Bleeding and Arterial Bleeding
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"
@@ -80,6 +80,7 @@ function SWEP:Heal(owner)
 		if IsValid(owner) and SERVER and owner:GetActiveWeapon():GetClass() == ID_WEAPON then -- Heal logic
 			if INI_SEF == true then
 				owner:RemoveEffect("Bleeding")
+				owner:RemoveEffect("ArterialBleed")
 			end	
 			owner:RemoveAmmo(1, ID_PRIMARYAMMO)  
 		end

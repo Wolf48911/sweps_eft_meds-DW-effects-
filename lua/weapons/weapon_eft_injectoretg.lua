@@ -10,7 +10,7 @@ SWEP.Purpose =
 [[
 Heals 45HP over 90s
 Removes 10HP
-Cures Concussion
+Treats Concussion
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"

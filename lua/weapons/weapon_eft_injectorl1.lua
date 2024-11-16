@@ -10,7 +10,7 @@ SWEP.Purpose =
 [[
 Gives Tenacity 3s, 35%
 Gives Exhausted 60s
-Cures Dark Vision
+Treats Dark Vision
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"

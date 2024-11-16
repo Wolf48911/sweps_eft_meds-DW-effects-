@@ -9,9 +9,9 @@ SWEP.Author = "Craft_Pig"
 SWEP.Purpose = 
 [[
 Heals up to 90HP
-Cures Bleeding
-Cures Concussion
-Cures Fatigue
+Treats Bleeding (40)
+Treats Arterial Bleeding (130)
+Treats Broken Legs (50)
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"
@@ -91,14 +91,17 @@ function SWEP:Heal(owner)
 				
 				if owner:HaveEffect("Bleeding") then
 					owner:RemoveEffect("Bleeding")
-					owner:RemoveAmmo(40, ID_PRIMARYAMMO)    
+					owner:RemoveAmmo(40, ID_PRIMARYAMMO)
+				end
+				if owner:HaveEffect("ArterialBleed") then
+					owner:RemoveEffect("ArterialBleed")
+					owner:RemoveAmmo(130, ID_PRIMARYAMMO)      
 				end	
-				if owner:HaveEffect("Fatigue") then
-					owner:RemoveEffect("Fatigue")
-					owner:SoftRemoveEffect("Fatigue")
+				if owner:HaveEffect("Brokenleg") then
+					owner:RemoveEffect("Brokenleg")
+					owner:SoftRemoveEffect("Brokenleg")
 					owner:RemoveAmmo(50, ID_PRIMARYAMMO)    
 				end	
-				owner:RemoveEffect("Concussion")
 			end
 			owner:SetHealth(math.min(owner:GetMaxHealth(), owner:Health() + VarHealHealth))
 			owner:RemoveAmmo(VarHealHealth, ID_PRIMARYAMMO)  

@@ -9,7 +9,8 @@ SWEP.Author = "Craft_Pig"
 SWEP.Purpose = 
 [[
 Heals up to 30HP
-Cures Bleeding
+Treats Bleeding (30)
+Treats Artieral Bleeding (170)
 ]]
 SWEP.Category = "EFT"
 SWEP.Category1 = "EFT"
@@ -17,7 +18,7 @@ SWEP.Category2 = "Medkits"
 
 SWEP.ViewModelFOV = 85
 SWEP.ViewModel = "models/weapons/sweps/eft/afak/v_meds_afak.mdl"
-SWEP.WorldModel = "models/weapons/sweps/eft/salewa/w_meds_salewa.mdl"
+SWEP.WorldModel = "models/weapons/sweps/eft/afak/w_meds_ifak.mdl"
 SWEP.UseHands = true
 SWEP.DrawCrosshair = false 
 
@@ -87,7 +88,11 @@ function SWEP:Heal(owner)
 				
 				if owner:HaveEffect("Bleeding") then
 					owner:RemoveEffect("Bleeding")
-					owner:RemoveAmmo(30, ID_PRIMARYAMMO)    
+					owner:RemoveAmmo(30, ID_PRIMARYAMMO)
+				end
+				if owner:HaveEffect("ArterialBleed") then
+					owner:RemoveEffect("ArterialBleed")
+					owner:RemoveAmmo(170, ID_PRIMARYAMMO)     
 				end	
 			end
 			owner:SetHealth(math.min(owner:GetMaxHealth(), owner:Health() + VarHealHealth))
