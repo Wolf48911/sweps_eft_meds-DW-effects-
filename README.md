@@ -19,5 +19,5 @@
 ## 🔽 Disclaimers
 You are permitted to modify the project for personal use. However, any redistribution, including uploading modified versions, requires prior written permission from the original author.
 
-## 🔽 Explination
+## 🔽 Explanation
 This was made for the purpose of using the Decaying winter status affects and the fact the mod will apply them while using the tarkov medical items instead of the decaying winter items
